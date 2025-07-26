@@ -1,0 +1,161 @@
+/* General Body & Theme */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0c0c1e;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header & Navigation */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    color: #f0e68c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    color: #f0e68c;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #f0e68c;
+}
+
+nav a.active {
+    color: #fff;
+    border-bottom: 2px solid #f0e68c;
+    text-shadow: 0 0 5px #f0e68c;
+}
+
+/* Main Content Area */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.content-box {
+    background: rgba(10, 25, 47, 0.8);
+    border: 1px solid rgba(240, 230, 140, 0.4);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.content-box h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8em;
+    color: #f0e68c;
+}
+
+.content-box h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2em;
+    color: #f0e68c;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(240, 230, 140, 0.3);
+    padding-bottom: 15px;
+}
+
+.content-box .icon {
+    margin-right: 10px;
+}
+
+/* Grid & Card Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    text-align: left;
+}
+
+.card {
+    background: rgba(23, 42, 73, 0.7);
+    border: 1px solid rgba(173, 216, 230, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #f0e68c;
+    font-size: 1.4em;
+}
+
+.card p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.card strong {
+    color: #add8e6;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.house-card img {
+    width: 150px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Search Bar */
+#search-bar {
+    width: 50%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(240, 230, 140, 0.5);
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+#search-bar::placeholder {
+    color: #aaa;
+}
